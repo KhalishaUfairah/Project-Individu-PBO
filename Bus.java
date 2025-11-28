@@ -20,3 +20,11 @@ public class Bus {
                penumpangBiasa.size() +
                penumpangBerdiri.size();
     }
+
+ public boolean naikkanPenumpang(Penumpang p) {
+
+        // Cek kapasitas total 40 orang
+        if (totalPenumpang() >= 40) {
+            System.out.println("Bus penuh, penumpang tidak dapat naik!");
+            return false;
+        }
