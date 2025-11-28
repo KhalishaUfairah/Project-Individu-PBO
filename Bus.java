@@ -14,3 +14,9 @@ public class Bus {
         penumpangBiasa = new ArrayList<>();
         penumpangBerdiri = new ArrayList<>();
     }
+
+    public int totalPenumpang() {
+        return penumpangPrioritas.size() +
+               penumpangBiasa.size() +
+               penumpangBerdiri.size();
+    }
