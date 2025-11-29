@@ -45,3 +45,9 @@ public class Bus {
                 return true;
             }
         }
+
+        // Kursi biasa
+        if (penumpangBiasa.size() < 16) {
+            penumpangBiasa.add(p);
+            return true;
+        }
