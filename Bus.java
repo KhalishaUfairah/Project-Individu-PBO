@@ -70,3 +70,13 @@ public class Bus {
 
         return removed;
     }
+
+    private void tampilkanList(String label, ArrayList<Penumpang> list) {
+        System.out.print(label + ": ");
+        if (list.isEmpty()) {
+            System.out.println("<kosong>");
+        } else {
+            list.forEach(p -> System.out.print(p.getNama() + " "));
+            System.out.println();
+        }
+    }
