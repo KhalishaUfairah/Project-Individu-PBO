@@ -60,3 +60,13 @@ public class Bus {
 
         return false;
     }
+
+    public boolean turunkanPenumpang(int id) {
+
+        boolean removed = 
+            penumpangPrioritas.removeIf(p -> p.getID() == id) ||
+            penumpangBiasa.removeIf(p -> p.getID() == id) ||
+            penumpangBerdiri.removeIf(p -> p.getID() == id);
+
+        return removed;
+    }
