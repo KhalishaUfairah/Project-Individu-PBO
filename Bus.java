@@ -80,3 +80,14 @@ public class Bus {
             System.out.println();
         }
     }
+
+    public void tampilkanData() {
+        System.out.println("\n===== DAFTAR PENUMPANG =====");
+        tampilkanList("Prioritas", penumpangPrioritas);
+        tampilkanList("Biasa", penumpangBiasa);
+        tampilkanList("Berdiri", penumpangBerdiri);
+        System.out.println("Total Penumpang : " + totalPenumpang());
+        System.out.println("Total Pendapatan: " + totalPendapatan);
+        System.out.println("=============================\n");
+    }
+}
