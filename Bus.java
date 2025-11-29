@@ -51,3 +51,12 @@ public class Bus {
             penumpangBiasa.add(p);
             return true;
         }
+
+        // Berdiri
+        if (penumpangBerdiri.size() < 20) {
+            penumpangBerdiri.add(p);
+            return true;
+        }
+
+        return false;
+    }
