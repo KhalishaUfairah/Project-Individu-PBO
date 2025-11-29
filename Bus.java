@@ -37,3 +37,11 @@ public class Bus {
             System.out.println(e.getMessage());
             return false;
         }
+
+        // Prioritas dulu
+        if (p.isPrioritas()) {
+            if (penumpangPrioritas.size() < 4) {
+                penumpangPrioritas.add(p);
+                return true;
+            }
+        }
