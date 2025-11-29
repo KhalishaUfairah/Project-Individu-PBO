@@ -28,3 +28,12 @@ public class Bus {
             System.out.println("Bus penuh, penumpang tidak dapat naik!");
             return false;
         }
+
+        // Proses bayar ongkos
+        try {
+            p.bayarOngkos(ONGKOS_BUS);
+            totalPendapatan += ONGKOS_BUS;
+        } catch (SaldoTidakCukupException e) {
+            System.out.println(e.getMessage());
+            return false;
+        }
