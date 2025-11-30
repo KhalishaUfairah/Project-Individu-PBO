@@ -45,4 +45,15 @@ public class TestBus {
                     System.out.println("Penumpang gagal naik!");
                 }
 
-            
+            } else if (pilihan == 2) {
+
+                System.out.print("Masukkan ID penumpang yang turun: ");
+                int id = in.nextInt();
+
+                if (bus.turunkanPenumpang(id))
+                    System.out.println("Penumpang berhasil turun!");
+                else
+                    System.out.println("Penumpang tidak ditemukan!");
+
+            } else if (pilihan == 3) {
+                bus.tampilkanData();      
