@@ -13,3 +13,21 @@ public class TestBus {
             System.out.println("4. Keluar");
             System.out.print("Pilihan: ");
             int pilihan = in.nextInt();
+
+            if (pilihan == 1) {
+
+                System.out.print("ID Penumpang : ");
+                int id = in.nextInt();
+                in.nextLine(); // clear buffer
+
+                System.out.print("Nama         : ");
+                String nama = in.nextLine();
+
+                System.out.print("Umur         : ");
+                int umur = in.nextInt();
+
+                System.out.print("Hamil (y/n)  : ");
+                char h = in.next().charAt(0);
+                boolean hamil = (h == 'y' || h == 'Y');
+
+                Penumpang p;
