@@ -66,3 +66,7 @@ public class TestBus {
                 System.out.println("Pilihan tidak valid!");
             }
         }
+
+        in.close();
+    }
+}
