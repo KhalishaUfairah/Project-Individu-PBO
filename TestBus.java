@@ -31,3 +31,18 @@ public class TestBus {
                 boolean hamil = (h == 'y' || h == 'Y');
 
                 Penumpang p;
+
+                // Penumpang prioritas otomatis
+                if (umur > 60 || umur < 10 || hamil) {
+                    p = new PenumpangPrioritas(id, nama, umur, hamil);
+                } else {
+                    p = new PenumpangBiasa(id, nama, umur, hamil);
+                }
+
+                if (bus.naikkanPenumpang(p)) {
+                    System.out.println("Penumpang berhasil naik!");
+                } else {
+                    System.out.println("Penumpang gagal naik!");
+                }
+
+            
